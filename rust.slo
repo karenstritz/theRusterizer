@@ -1,0 +1,836 @@
+shader_obj 5.0 1 0
+rust 202 17 46 108 296 0 39 39 0 39 13 1
+18 4181
+rgb
+current
+shader
+!!anyspace!!
+/DPA/moosefs/2013KarenThesis/lookdev/master/surface/rust/prman/0001
+.:
+rust.sl
+/DPA/moosefs/show/stage/shot/workflow/asset/version/resolution/type/stageShotAsset-Version.ext
+/DPA/moosefs/show/stage/shot/workflow/asset/version/resolution/type/
+stageShotAsset-Version
+%s%s
+%s.%04d.tex
+
+textureatlas
+surface
+$meta_1700
+$meta___PRMAN_RELEASE__1700
+$meta_<![CDATA[\nslim 1 appearance slim {\ninstance surface rust rust {\ncollection void cellularcollection {\nstate open\nlabel "Rusterizer"\nparameter string rusterizerOutputPath {\nlabel "Output Path"\ndefault "/DPA/moosefs/show/stage/shot/workflow/asset/version/resolution/type/"\n}\nparameter string rusterizerOutputBaseFilename {\nlabel "Output Base Filename"\ndefault "stageShotAsset-Version"\n}\nparameter float uOffset {\nlabel "Texture Patch U Offset"\ndefault 0.0\n}\nparameter float vOffset {\nlabel "Texture Patch V Offset"\ndefault 0.0\n}\nparameter float mapExport {\nlabel "Map Export Mode"\nsubtype selector\nrange {\n"Off" 1\n"Diffuse" 2\n"Specular" 3\n"Bump" 4\n}\ndefault 1\n}\n}\ncollection void maincollection {\nstate open\nlabel "Main"\nparameter string diffuseMapName {\nlabel "Base Diffuse Map"\ndefault "/DPA/moosefs/show/stage/shot/workflow/asset/version/resolution/type/stageShotAsset-Version.ext"\n}\nparameter string bumpMapName {\nlabel "Base Bump Map"\ndefault "/DPA/moosefs/show/stage/shot/workflow/asset/version/resolution/type/stageShotAsset-Version.ext"\n}\nparameter string specMapName {\nlabel "Base Spec Map"\ndefault "/DPA/moosefs/show/stage/shot/workflow/asset/version/resolution/type/stageShotAsset-Version.ext"\n}\nparameter float age {\nlabel "Age of Rust"\ndefault 3.0\n}\nparameter float maxLife {\nlabel "Max Life"\ndefault 3.0\n}\nparameter float noiseLevel {\nlabel "Number of Noise Layers"\ndefault 4.0\nrange { 2 6 1.0 }\n}\nparameter float overallScale {\nlabel "Overall Scale"\ndefault 1.0\n}\nparameter float gammaVal {\nlabel "Color Gamma"\ndefault .4545\n}\nparameter float roughness {\nlabel "Roughness"\ndefault 1.0\n}\nparameter float Kd {\nlabel "Overall Diffuse"\ndefault 1.0\n}\nparameter float Ka {\nlabel "Overall Ambient"\ndefault 1.0\n}\nparameter color specularColor {\nlabel "Overall Specular Color"\ndefault { 1.0 1.0 1.0 }\n}\nparameter float rustSpec {\nlabel "Rust Specular Gain"\ndefault 1.0\n}\nparameter float rustBumpNoiseDepth {\nlabel "Rust Bump Amount"\ndefault 1.0\n}\nparameter float rustBumpNoiseFreq {\nlabel "Rust Bump Noise Freq"\ndefault 1.0\n}\nparameter float paintSpec {\nlabel "Paint Specular Gain"\ndefault 1.0\n}\nparameter float bumpPaintScale {\nlabel "Paint Bump Amount"\ndefault 1.0\n}\nparameter color baseColor {\ndetail varying\nlabel "Base Color"\ndefault {0 0 0}\n}\n}\ncollection void levelAcollection {\nstate open\nlabel "A"\nparameter color layerAColor {\ndetail varying\nlabel "Color A"\ndefault {0 0 0}\n}\nparameter float noiseScaleA {\nlabel "Noise Scale A"\ndefault 1.0\n}\nparameter float noiseFreqA {\nlabel "Noise Freq A"\ndefault 1.0\n}\n}\ncollection void levelBcollection {\nstate open\nlabel "B"\nparameter color layerBColor {\ndetail varying\nlabel "Color B"\ndefault {0 0 0}\n}\nparameter float noiseScaleB {\nlabel "Noise Scale B"\ndefault 1.0\n}\nparameter float noiseFreqB {\nlabel "Noise Freq B" \ndefault 1.0\n}\n}\ncollection void levelCcollection {\nstate open\nlabel "C"\nparameter color layerCColor {\ndetail varying\nlabel "Color C"\ndefault {0 0 0}\n}\nparameter float noiseScaleC {\nlabel "Noise Scale C"\ndefault 1.0\n}\nparameter float noiseFreqC {\nlabel "Noise Freq C"\ndefault 1.0\n}\n}\ncollection void levelDcollection {\nstate open\nlabel "D"\nparameter color layerDColor {\ndetail varying\nlabel "Color D"\ndefault {0 0 0}\n}\nparameter float noiseScaleD {\nlabel "Noise Scale D"\ndefault 1.0\n}\nparameter float noiseFreqD {\nlabel "Noise Freq D"\ndefault 1.0\n}\n}\ncollection void levelEcollection {\nstate open\nlabel "E"\nparameter color layerEColor {\ndetail varying\nlabel "Color E"\ndefault {0 0 0}\n}\nparameter float noiseScaleE {\nlabel "Noise Scale E"\ndefault 1.0\n}\nparameter float noiseFreqE {\nlabel "Noise Freq E" \ndefault 1.0\n}\n}\n}	\n}\n]]>
+17
+1
+0
+0.200000003
+0.4544999897
+3
+1.200000048
+0.8000000119
+2
+4
+5
+6
+6.5
+6.800000191
+8.5
+0.1400000006
+0.02899999917
+0
+0
+202
+$meta___PRMAN_RELEASE__ 6 2 -1 15 3 0 0 0 0 0 0
+$meta___PRMAN_RELEASE_TAG__ 6 2 -1 16 3 0 0 0 0 0 0
+$S0 6 2 -1 0 3 0 0 0 0 0 0
+$S2 6 2 -1 1 3 0 0 0 0 0 0
+$S5 6 2 -1 2 3 0 0 0 0 65 65
+$S6 6 2 -1 3 3 0 0 0 0 0 0
+$srcDir 6 2 -1 4 3 0 0 0 0 0 0
+$includePath 6 2 -1 5 3 0 0 0 0 0 0
+$S7 6 2 -1 6 3 0 0 0 0 1 296
+$meta_slim 6 2 -1 17 3 0 0 0 0 0 0
+$C0 4 2 -1 0 3 0 0 0 0 1 284
+$C1 4 2 -1 1 3 0 0 0 0 8 291
+$C2 4 2 -1 2 3 0 0 0 0 11 95
+$C3 4 2 -1 3 3 0 0 0 0 30 30
+$C4 4 2 -1 4 3 0 0 0 0 32 266
+$C5 4 2 -1 5 3 0 0 0 0 33 33
+$S8 6 2 -1 7 3 0 0 0 0 35 37
+$S9 6 2 -1 8 3 0 0 0 0 38 38
+$S10 6 2 -1 9 3 0 0 0 0 39 39
+$S11 6 2 -1 10 3 0 0 0 0 49 49
+$S12 6 2 -1 11 3 0 0 0 0 57 57
+$S13 6 2 -1 12 3 0 0 47 296 62 62
+$C8 4 2 -1 6 3 0 0 0 0 91 95
+$C9 4 2 -1 7 3 0 0 0 0 102 283
+$C10 4 2 -1 8 3 0 0 0 0 167 289
+$C11 4 2 -1 9 3 0 0 0 0 170 170
+$C12 4 2 -1 10 3 0 0 0 0 173 173
+$C13 4 2 -1 11 3 0 0 0 0 183 183
+$C14 4 2 -1 12 3 0 0 0 0 189 189
+$C15 4 2 -1 13 3 0 0 0 0 195 195
+$S14 6 2 -1 13 3 0 0 41 41 0 0
+$S16 6 2 -1 14 3 0 0 40 40 0 0
+$CT0 3 2 -1 14 3 0 0 0 0 48 48
+specularColor 3 5 0 33 3 1 1 1 1 198 242
+baseColor 3 5 0 34 3 1 2 2 2 96 102
+layerAColor 3 5 0 35 3 1 3 3 3 106 112
+layerBColor 3 5 0 36 3 1 4 4 4 116 122
+layerCColor 3 5 0 37 3 1 5 5 5 126 132
+layerDColor 3 5 0 38 3 1 6 6 6 136 142
+layerEColor 3 5 0 39 3 1 7 7 7 146 152
+uOffset 4 5 -1 40 3 1 8 8 8 42 42
+vOffset 4 5 -1 41 3 1 9 9 9 44 44
+mapExport 4 5 -1 42 3 1 10 10 10 198 289
+range 4 5 -1 43 3 1 11 11 11 198 292
+overallScale 4 5 -1 44 3 1 12 12 12 66 86
+rustBumpNoiseDepth 4 5 -1 45 3 1 13 13 13 198 205
+rustBumpNoiseFreq 4 5 -1 46 3 1 14 14 14 176 178
+noiseLevel 4 5 -1 47 3 1 15 15 15 161 173
+Ka 4 5 -1 48 3 1 16 16 16 198 238
+Kd 4 5 -1 49 3 1 17 17 17 198 240
+rustSpec 4 5 -1 50 3 1 18 18 18 198 271
+paintSpec 4 5 -1 51 3 1 19 19 19 198 287
+noiseScaleA 4 5 -1 52 3 1 20 20 20 67 67
+noiseFreqA 4 5 -1 53 3 1 21 21 21 68 70
+noiseScaleB 4 5 -1 54 3 1 22 22 22 72 72
+noiseFreqB 4 5 -1 55 3 1 23 23 23 73 75
+noiseScaleC 4 5 -1 56 3 1 24 24 24 77 77
+noiseFreqC 4 5 -1 57 3 1 25 25 25 78 80
+noiseScaleD 4 5 -1 58 3 1 26 26 26 82 82
+noiseFreqD 4 5 -1 59 3 1 27 27 27 83 85
+noiseScaleE 4 5 -1 60 3 1 28 28 28 87 87
+noiseFreqE 4 5 -1 61 3 1 29 29 29 88 90
+gammaVal 4 5 -1 62 3 1 30 30 30 97 284
+roughness 4 5 -1 63 3 1 31 31 31 198 244
+age 4 5 -1 64 3 1 32 32 32 54 54
+bumpPaintScale 4 5 -1 65 3 1 33 33 33 198 273
+maxLife 4 5 -1 66 3 1 34 34 34 56 56
+diffuseMapName 6 5 -1 67 3 1 35 35 35 60 60
+bumpMapName 6 5 -1 68 3 1 36 36 36 61 61
+specMapName 6 5 -1 69 3 1 37 37 37 62 64
+rusterizerOutputPath 6 5 -1 70 3 1 38 38 38 49 49
+rusterizerOutputBaseFilename 6 5 -1 71 3 1 39 39 39 49 49
+$result_surface 0 15 -1 0 3 0 0 0 0 0 0
+Os 3 10 0 0 2 0 0 0 0 179 179
+Ps 2 10 1 0 2 0 0 0 0 65 274
+N 22 10 1 0 2 0 0 0 0 50 50
+s 4 10 -1 0 2 0 0 43 43 43 64
+t 4 10 -1 0 2 0 0 45 46 45 64
+I 21 10 1 0 2 0 0 0 0 51 52
+Oi 3 10 0 0 2 0 0 179 179 198 295
+Ci 3 10 0 0 2 0 0 220 295 0 0
+$1_sOffset 4 3 -1 0 2 0 0 42 42 43 43
+$1_tOffset 4 3 -1 0 2 0 0 44 44 45 45
+$3_rustColor 3 3 0 0 2 0 0 48 253 180 254
+$3_mapbase 6 3 -1 0 3 0 0 49 49 57 57
+$3_Nf 2 3 1 0 2 0 0 51 276 198 272
+$3_V 2 3 1 0 2 0 0 53 53 198 244
+$3_mapname 6 3 -1 0 3 0 0 57 57 58 59
+$3_mapColor 3 3 0 0 2 0 0 58 58 198 291
+$3_alphaValue 4 3 -1 0 2 0 0 59 59 198 253
+$3_diffuseMap 3 3 0 0 2 0 0 60 60 198 283
+$3_bumpMap 4 3 -1 0 2 0 0 61 61 198 295
+$3_specMap 4 3 -1 0 2 0 0 64 64 198 288
+$3_PP 2 3 1 0 2 0 0 65 65 66 176
+$3_gammaColorA 3 3 0 0 2 0 0 105 105 156 156
+$3_gammaColorB 3 3 0 0 2 0 0 115 115 156 156
+$3_gammaColorC 3 3 0 0 2 0 0 125 125 157 157
+$3_gammaColorD 3 3 0 0 2 0 0 135 135 158 158
+$3_gammaColorE 3 3 0 0 2 0 0 145 145 159 159
+$3_gammaColorF 3 3 0 0 2 0 0 155 155 160 160
+$3_noiseA 4 3 -1 0 2 0 0 70 70 91 91
+$3_noiseB 4 3 -1 0 2 0 0 75 75 92 92
+$3_noiseC 4 3 -1 0 2 0 0 80 80 93 93
+$3_noiseD 4 3 -1 0 2 0 0 85 85 94 94
+$3_noiseE 4 3 -1 0 2 0 0 90 90 95 95
+$3_smoothA 4 3 -1 0 2 0 0 91 91 156 156
+$3_smoothB 4 3 -1 0 2 0 0 92 92 157 157
+$3_smoothC 4 3 -1 0 2 0 0 93 93 158 158
+$3_smoothD 4 3 -1 0 2 0 0 94 94 159 159
+$3_smoothE 4 3 -1 0 2 0 0 95 95 160 160
+$3_rustColorA 3 3 0 0 2 0 0 156 156 157 163
+$3_rustColorB 3 3 0 0 2 0 0 157 157 158 166
+$3_rustColorC 3 3 0 0 2 0 0 158 158 159 169
+$3_rustColorD 3 3 0 0 2 0 0 159 159 160 172
+$3_rustColorE 3 3 0 0 2 0 0 160 160 175 175
+$3_rustBumpNoise 4 3 -1 0 2 0 0 178 178 198 294
+$3_rustEdgeColor 3 3 0 0 2 0 0 185 197 198 253
+$12_gammaDiffuseMap 3 3 0 0 2 0 0 235 235 236 236
+$15_gammaDiffuseMap 3 3 0 0 2 0 0 264 264 265 265
+$18_gammaDiffuseMap 3 3 0 0 2 0 0 286 286 0 0
+surface 13 8 -1 0 2 1 72 0 0 39 296
+$T0 22 4 1 0 2 0 0 50 275 51 276
+$T1 21 4 1 0 2 0 0 52 52 53 53
+$T3 4 4 -1 0 3 0 0 54 284 55 285
+$T4 4 4 -1 0 3 0 0 55 153 56 154
+$T5 11 4 -1 0 3 0 0 62 295 63 295
+$Code0 9 8 -1 0 2 0 0 0 0 63 64
+$Code1 9 8 -1 0 2 0 0 0 0 65 65
+$Code2 9 8 -1 0 2 0 0 0 0 63 63
+$Cond0 10 11 -1 0 2 0 0 63 64 63 64
+$T6 4 4 -1 0 2 0 0 69 291 70 292
+$T7 2 4 1 0 2 0 0 66 274 67 275
+$T8 2 4 1 0 2 0 0 67 273 68 274
+$T26 4 4 -1 0 3 0 0 98 148 105 155
+$T29 4 4 -1 0 3 0 0 101 151 105 155
+$T32 4 4 -1 0 3 0 0 104 154 105 155
+$Code3 9 8 -1 0 2 0 0 0 0 162 163
+$Code4 9 8 -1 0 2 0 0 0 0 163 175
+$Code5 9 8 -1 0 2 0 0 0 0 162 162
+$Cond1 10 11 -1 0 2 0 0 162 175 162 175
+$T81 11 4 -1 0 3 0 0 164 295 165 295
+$Code6 9 8 -1 0 2 0 0 0 0 165 166
+$Code7 9 8 -1 0 2 0 0 0 0 166 175
+$Code8 9 8 -1 0 2 0 0 0 0 165 165
+$Cond2 10 11 -1 0 2 0 0 165 175 165 175
+$T82 11 4 -1 0 3 0 0 167 295 168 295
+$Code9 9 8 -1 0 2 0 0 0 0 168 169
+$Code10 9 8 -1 0 2 0 0 0 0 169 175
+$Code11 9 8 -1 0 2 0 0 0 0 168 168
+$Cond3 10 11 -1 0 2 0 0 168 175 168 175
+$T83 11 4 -1 0 3 0 0 170 295 171 295
+$Code12 9 8 -1 0 2 0 0 0 0 171 172
+$Code13 9 8 -1 0 2 0 0 0 0 172 175
+$Code14 9 8 -1 0 2 0 0 0 0 171 171
+$Cond4 10 11 -1 0 2 0 0 171 175 171 175
+$T84 11 4 -1 0 3 0 0 173 175 174 175
+$Code15 9 8 -1 0 2 0 0 0 0 174 175
+$Code16 9 8 -1 0 2 0 0 0 0 176 176
+$Code17 9 8 -1 0 2 0 0 0 0 174 174
+$Cond5 10 11 -1 0 2 0 0 174 175 174 175
+$T88 4 4 -1 0 2 0 0 181 279 182 286
+$T89 4 4 -1 0 2 0 0 182 282 183 286
+$Code18 9 8 -1 0 2 0 0 0 0 200 247
+$Code19 9 8 -1 0 2 0 0 0 0 247 295
+$Code20 9 8 -1 0 2 0 0 0 0 200 200
+$Cond6 10 11 -1 0 2 0 0 200 295 200 295
+$T104 11 4 -1 0 2 0 0 202 295 203 295
+$Code21 9 8 -1 0 2 0 0 0 0 203 220
+$Code22 9 8 -1 0 2 0 0 0 0 220 247
+$Code23 9 8 -1 0 2 0 0 0 0 203 203
+$Cond7 10 11 -1 0 2 0 0 203 247 203 247
+$T109 3 4 0 0 2 0 0 210 287 220 288
+$T110 3 4 0 0 2 0 0 211 241 212 246
+$T111 3 4 0 0 2 0 0 212 246 215 247
+$T113 3 4 0 0 2 0 0 214 244 215 245
+$T115 3 4 0 0 3 0 0 216 242 218 243
+$T129 4 4 -1 0 2 0 0 234 285 235 286
+$T141 3 4 0 0 2 0 0 245 245 246 246
+$Code24 9 8 -1 0 2 0 0 0 0 249 265
+$Code25 9 8 -1 0 2 0 0 0 0 265 295
+$Code26 9 8 -1 0 2 0 0 0 0 249 249
+$Cond8 10 11 -1 0 2 0 0 249 295 249 295
+$Code27 9 8 -1 0 2 0 0 0 0 252 254
+$Code28 9 8 -1 0 2 0 0 0 0 254 265
+$Code29 9 8 -1 0 2 0 0 0 0 252 252
+$Cond9 10 11 -1 0 2 0 0 252 265 252 265
+$Code30 9 8 -1 0 2 0 0 0 0 267 288
+$Code31 9 8 -1 0 2 0 0 0 0 288 295
+$Code32 9 8 -1 0 2 0 0 0 0 267 267
+$Cond10 10 11 -1 0 2 0 0 267 295 267 295
+$Code33 9 8 -1 0 2 0 0 0 0 270 271
+$Code34 9 8 -1 0 2 0 0 0 0 271 288
+$Code35 9 8 -1 0 2 0 0 0 0 270 270
+$Cond11 10 11 -1 0 2 0 0 270 288 270 288
+$Code36 9 8 -1 0 2 0 0 0 0 290 295
+$Code37 9 8 -1 0 2 0 0 0 0 296 296
+$Code38 9 8 -1 0 2 0 0 0 0 290 290
+$Cond12 10 11 -1 0 2 0 0 290 295 290 295
+$Code39 9 8 -1 0 2 0 0 0 0 293 294
+$Code40 9 8 -1 0 2 0 0 0 0 294 295
+$Code41 9 8 -1 0 2 0 0 0 0 293 293
+$Cond13 10 11 -1 0 2 0 0 293 295 293 295
+899
+33 10 
+34 10 
+35 10 
+36 10 
+37 10 
+38 10 
+39 10 
+40 11 
+41 11 
+42 10 
+43 12 
+44 10 
+45 10 
+46 10 
+47 11 
+48 10 
+49 10 
+50 10 
+51 10 
+52 10 
+53 10 
+54 10 
+55 10 
+56 10 
+57 10 
+58 10 
+59 10 
+60 10 
+61 10 
+62 13 
+63 10 
+64 14 
+65 15 
+66 14 
+67 16 
+68 16 
+69 16 
+70 17 
+71 18 
+31 
+30 
+81 40 
+76 76 81 
+82 41 
+77 77 82 
+77 10 77 
+21 
+83 32 
+84 19 70 71 
+121 75 
+85 121 78 
+122 78 
+86 122 
+123 64 
+124 123 10 
+123 124 10 66 
+87 20 84 123 
+88 87 11 11 76 77 
+89 87 14 11 76 77 
+90 67 11 11 76 77 
+91 68 11 11 76 77 
+125 69 21 
+125 128 126 127 129 
+92 69 11 11 76 77 
+93 4 74 
+131 44 93 
+132 52 131 
+131 53 132 
+130 131 
+100 130 53 
+131 44 93 
+132 54 131 
+131 55 132 
+130 131 
+101 130 55 
+131 44 93 
+132 56 131 
+131 57 132 
+130 131 
+102 130 57 
+131 44 93 
+132 58 131 
+131 59 132 
+130 131 
+103 130 59 
+131 44 93 
+132 60 131 
+131 61 132 
+130 131 
+104 130 61 
+105 12 22 100 
+106 12 22 101 
+107 12 22 102 
+108 12 22 103 
+109 12 22 104 
+123 34 11 
+124 10 62 
+133 123 124 
+123 34 10 
+124 10 62 
+134 123 124 
+123 34 23 
+124 10 62 
+135 123 124 
+94 133 134 135 
+123 35 11 
+124 10 62 
+133 123 124 
+123 35 10 
+124 10 62 
+134 123 124 
+123 35 23 
+124 10 62 
+135 123 124 
+95 133 134 135 
+123 36 11 
+124 10 62 
+133 123 124 
+123 36 10 
+124 10 62 
+134 123 124 
+123 36 23 
+124 10 62 
+135 123 124 
+96 133 134 135 
+123 37 11 
+124 10 62 
+133 123 124 
+123 37 10 
+124 10 62 
+134 123 124 
+123 37 23 
+124 10 62 
+135 123 124 
+97 133 134 135 
+123 38 11 
+124 10 62 
+133 123 124 
+123 38 10 
+124 10 62 
+134 123 124 
+123 38 23 
+124 10 62 
+135 123 124 
+98 133 134 135 
+123 39 11 
+124 10 62 
+133 123 124 
+123 39 10 
+124 10 62 
+134 123 124 
+123 39 23 
+124 10 62 
+135 123 124 
+99 133 134 135 
+110 94 95 105 
+111 96 110 106 
+112 97 111 107 
+113 98 112 108 
+114 99 113 109 
+125 47 23 
+125 138 136 137 139 
+83 110 
+140 47 14 
+140 143 141 142 144 
+83 111 
+145 47 24 
+145 148 146 147 149 
+83 112 
+150 47 25 
+150 153 151 152 154 
+83 113 
+155 47 26 
+155 158 156 157 159 
+83 114 
+131 46 93 
+130 131 
+115 130 46 
+79 73 
+130 83 11 
+160 83 11 
+161 10 160 
+160 161 27 
+161 130 160 
+116 11 161 
+130 83 10 
+160 83 10 
+161 10 160 
+160 161 28 
+161 130 160 
+116 10 161 
+130 83 23 
+160 83 10 
+161 10 160 
+160 161 29 
+161 130 160 
+116 23 161 
+33 42 43 45 48 49 50 51 62 63 65 74 79 83 85 86 88 89 90 91 92 115 116 
+125 42 10 
+125 164 162 163 165 
+130 88 11 
+166 130 43 
+166 169 167 168 170 
+131 115 85 
+132 45 131 
+131 74 132 
+121 131 
+85 121 
+83 116 83 89 
+171 79 83 
+172 
+173 48 172 
+172 85 
+174 49 172 
+172 173 174 
+175 50 33 
+173 85 86 63 
+174 175 173 
+173 172 174 
+80 171 173 
+131 91 85 
+132 65 131 
+131 74 132 
+121 131 
+85 121 
+130 90 11 
+123 10 62 
+160 130 123 
+130 90 10 
+123 10 62 
+161 130 123 
+130 90 23 
+123 10 62 
+176 130 123 
+117 160 161 176 
+171 79 117 
+172 
+173 48 172 
+172 85 
+174 49 172 
+172 173 174 
+175 51 33 
+173 92 175 
+174 85 86 63 
+177 173 174 
+173 172 177 
+80 171 173 
+140 42 23 
+140 180 178 179 181 
+130 88 11 
+166 130 43 
+166 184 182 183 185 
+83 116 83 89 
+80 79 83 
+130 90 11 
+123 10 62 
+160 130 123 
+130 90 10 
+123 10 62 
+161 130 123 
+130 90 23 
+123 10 62 
+176 130 123 
+118 160 161 176 
+80 79 118 
+145 42 14 
+145 188 186 187 189 
+130 88 11 
+166 130 43 
+166 192 190 191 193 
+80 50 79 
+131 91 85 
+132 65 131 
+131 74 132 
+121 131 
+85 121 
+130 90 11 
+123 10 62 
+160 130 123 
+130 90 10 
+123 10 62 
+161 130 123 
+130 90 23 
+123 10 62 
+176 130 123 
+119 160 161 176 
+171 51 79 
+80 92 171 
+150 42 24 
+150 196 194 195 197 
+130 88 11 
+166 130 43 
+166 200 198 199 201 
+80 115 79 
+80 91 79 
+21 
+_assign 	2 0  6 256 0
+_assign 	2 2  6 257 0
+_assign 	2 4  6 258 0
+_assign 	2 6  6 259 0
+_assign 	2 8  6 260 0
+_assign 	2 10  6 261 0
+_assign 	2 12  6 262 0
+_assign 	2 14  6 263 0
+_assign 	2 16  6 264 0
+_assign 	2 18  6 265 0
+_assign 	2 20  6 266 0
+_assign 	2 22  6 267 0
+_assign 	2 24  6 268 0
+_assign 	2 26  6 269 0
+_assign 	2 28  6 270 0
+_assign 	2 30  6 271 0
+_assign 	2 32  6 272 0
+_assign 	2 34  6 273 0
+_assign 	2 36  6 274 0
+_assign 	2 38  6 275 0
+_assign 	2 40  6 276 0
+_assign 	2 42  6 277 0
+_assign 	2 44  6 278 0
+_assign 	2 46  6 279 0
+_assign 	2 48  6 280 0
+_assign 	2 50  6 281 0
+_assign 	2 52  6 282 0
+_assign 	2 54  6 283 0
+_assign 	2 56  6 284 0
+_assign 	2 58  6 285 0
+_assign 	2 60  6 286 0
+_assign 	2 62  6 287 0
+_assign 	2 64  6 288 0
+_assign 	2 66  6 289 0
+_assign 	2 68  6 290 0
+_assign 	2 70  6 291 0
+_assign 	2 72  6 292 0
+_assign 	2 74  6 293 0
+_assign 	2 76  6 294 0
+_enterproc 	1 78  6 255 2
+_enterproc 	1 79  6 300 3
+_assign 	2 80  6 234 1
+_subtract 	3 82  6 238 1
+_assign 	2 85  6 245 1
+_subtract 	3 87  6 250 1
+_subtract 	3 90  6 252 1
+_enterproc 	1 93  6 300 3
+_assign 	2 94  6 305 3
+format		4 96  6 308 3
+normalize 	2 100  6 311 3
+faceforward 	3 102  6 311 3
+normalize 	2 105  6 312 3
+_negate 	2 107  6 312 3
+round		2 109  6 315 3
+_add		3 111  6 315 3
+clamp		4 114  6 315 3
+format		4 118  6 315 3
+texture 	6 122  6 318 3
+texture 	6 128  6 319 3
+texture 	6 134  6 322 3
+texture 	6 140  6 326 3
+_ne		3 146  6 330 3
+_if		5 149  6 330 3
+texture 	6 154  6 331 4
+transform 	3 160  6 338 3
+_scale		3 163  6 348 3
+_scale		3 166  6 348 3
+_scale		3 169  6 348 3
+noise		2 172  6 348 3
+_divide 	3 174  6 348 3
+_scale		3 177  6 351 3
+_scale		3 180  6 351 3
+_scale		3 183  6 351 3
+noise		2 186  6 351 3
+_divide 	3 188  6 351 3
+_scale		3 191  6 354 3
+_scale		3 194  6 354 3
+_scale		3 197  6 354 3
+noise		2 200  6 354 3
+_divide 	3 202  6 354 3
+_scale		3 205  6 357 3
+_scale		3 208  6 357 3
+_scale		3 211  6 357 3
+noise		2 214  6 357 3
+_divide 	3 216  6 357 3
+_scale		3 219  6 360 3
+_scale		3 222  6 360 3
+_scale		3 225  6 360 3
+noise		2 228  6 360 3
+_divide 	3 230  6 360 3
+smoothstep 	4 233  6 364 3
+smoothstep 	4 237  6 365 3
+smoothstep 	4 241  6 366 3
+smoothstep 	4 245  6 367 3
+smoothstep 	4 249  6 368 3
+comp		3 253  6 372 3
+_divide 	3 256  6 372 3
+pow		3 259  6 372 3
+comp		3 262  6 372 3
+_divide 	3 265  6 372 3
+pow		3 268  6 372 3
+comp		3 271  6 372 3
+_divide 	3 274  6 372 3
+pow		3 277  6 372 3
+_color		4 280  6 372 3
+comp		3 284  6 373 3
+_divide 	3 287  6 373 3
+pow		3 290  6 373 3
+comp		3 293  6 373 3
+_divide 	3 296  6 373 3
+pow		3 299  6 373 3
+comp		3 302  6 373 3
+_divide 	3 305  6 373 3
+pow		3 308  6 373 3
+_color		4 311  6 373 3
+comp		3 315  6 374 3
+_divide 	3 318  6 374 3
+pow		3 321  6 374 3
+comp		3 324  6 374 3
+_divide 	3 327  6 374 3
+pow		3 330  6 374 3
+comp		3 333  6 374 3
+_divide 	3 336  6 374 3
+pow		3 339  6 374 3
+_color		4 342  6 374 3
+comp		3 346  6 375 3
+_divide 	3 349  6 375 3
+pow		3 352  6 375 3
+comp		3 355  6 375 3
+_divide 	3 358  6 375 3
+pow		3 361  6 375 3
+comp		3 364  6 375 3
+_divide 	3 367  6 375 3
+pow		3 370  6 375 3
+_color		4 373  6 375 3
+comp		3 377  6 376 3
+_divide 	3 380  6 376 3
+pow		3 383  6 376 3
+comp		3 386  6 376 3
+_divide 	3 389  6 376 3
+pow		3 392  6 376 3
+comp		3 395  6 376 3
+_divide 	3 398  6 376 3
+pow		3 401  6 376 3
+_color		4 404  6 376 3
+comp		3 408  6 377 3
+_divide 	3 411  6 377 3
+pow		3 414  6 377 3
+comp		3 417  6 377 3
+_divide 	3 420  6 377 3
+pow		3 423  6 377 3
+comp		3 426  6 377 3
+_divide 	3 429  6 377 3
+pow		3 432  6 377 3
+_color		4 435  6 377 3
+mix		4 439  6 380 3
+mix		4 443  6 381 3
+mix		4 447  6 382 3
+mix		4 451  6 383 3
+mix		4 455  6 384 3
+_eq		3 459  6 388 3
+_if		5 462  6 388 3
+_assign 	2 467  6 389 5
+_eq		3 469  6 391 3
+_if		5 472  6 391 3
+_assign 	2 477  6 392 6
+_eq		3 479  6 394 3
+_if		5 482  6 394 3
+_assign 	2 487  6 395 7
+_eq		3 489  6 397 3
+_if		5 492  6 397 3
+_assign 	2 497  6 398 8
+_eq		3 499  6 400 3
+_if		5 502  6 400 3
+_assign 	2 507  6 401 9
+_scale		3 509  6 407 3
+noise		2 512  6 407 3
+_divide 	3 514  6 407 3
+_assign 	2 517  6 410 3
+comp		3 519  6 414 3
+comp		3 522  6 414 3
+_subtract 	3 525  6 414 3
+_divide 	3 528  6 414 3
+_add		3 531  6 414 3
+setcomp 	3 534  6 414 3
+comp		3 537  6 415 3
+comp		3 540  6 415 3
+_subtract 	3 543  6 415 3
+_divide 	3 546  6 415 3
+_add		3 549  6 415 3
+setcomp 	3 552  6 415 3
+comp		3 555  6 416 3
+comp		3 558  6 416 3
+_subtract 	3 561  6 416 3
+_divide 	3 564  6 416 3
+_add		3 567  6 416 3
+setcomp 	3 570  6 416 3
+_lightingstart 	23 573  6 420 3
+_eq		3 596  6 420 3
+_if		5 599  6 420 3
+comp		3 604  6 422 10
+_gt		3 607  6 422 10
+_if		5 610  6 422 10
+_scale		3 615  6 423 11
+_scale		3 618  6 423 11
+_add		3 621  6 423 11
+calculatenormal 2 624  6 423 11
+normalize 	2 626  6 423 11
+mix		4 628  6 424 11
+_multiply 	3 632  6 425 11
+ambient 	1 635  6 425 11
+_scale		3 636  6 425 11
+diffuse 	2 639  6 425 11
+_scale		3 641  6 425 11
+_add		3 644  6 425 11
+_scale		3 647  6 425 11
+specular 	4 650  6 425 11
+_multiply 	3 654  6 425 11
+_add		3 657  6 425 11
+_multiply 	3 660  6 425 11
+_scale		3 663  6 429 12
+_scale		3 666  6 429 12
+_add		3 669  6 429 12
+calculatenormal 2 672  6 429 12
+normalize 	2 674  6 429 12
+comp		3 676  6 430 12
+_divide 	3 679  6 430 12
+pow		3 682  6 430 12
+comp		3 685  6 430 12
+_divide 	3 688  6 430 12
+pow		3 691  6 430 12
+comp		3 694  6 430 12
+_divide 	3 697  6 430 12
+pow		3 700  6 430 12
+_color		4 703  6 430 12
+_multiply 	3 707  6 431 12
+ambient 	1 710  6 431 12
+_scale		3 711  6 431 12
+diffuse 	2 714  6 431 12
+_scale		3 716  6 431 12
+_add		3 719  6 431 12
+_scale		3 722  6 431 12
+_scale		3 725  6 431 12
+specular 	4 728  6 431 12
+_multiply 	3 732  6 431 12
+_add		3 735  6 431 12
+_multiply 	3 738  6 431 12
+_eq		3 741  6 435 3
+_if		5 744  6 435 3
+comp		3 749  6 437 13
+_gt		3 752  6 437 13
+_if		5 755  6 437 13
+mix		4 760  6 438 14
+_multiply 	3 764  6 439 14
+comp		3 767  6 443 15
+_divide 	3 770  6 443 15
+pow		3 773  6 443 15
+comp		3 776  6 443 15
+_divide 	3 779  6 443 15
+pow		3 782  6 443 15
+comp		3 785  6 443 15
+_divide 	3 788  6 443 15
+pow		3 791  6 443 15
+_color		4 794  6 443 15
+_multiply 	3 798  6 444 15
+_eq		3 801  6 448 3
+_if		5 804  6 448 3
+comp		3 809  6 450 16
+_gt		3 812  6 450 16
+_if		5 815  6 450 16
+_scale		3 820  6 451 17
+_scale		3 823  6 455 18
+_scale		3 826  6 455 18
+_add		3 829  6 455 18
+calculatenormal 2 832  6 455 18
+normalize 	2 834  6 455 18
+comp		3 836  6 456 18
+_divide 	3 839  6 456 18
+pow		3 842  6 456 18
+comp		3 845  6 456 18
+_divide 	3 848  6 456 18
+pow		3 851  6 456 18
+comp		3 854  6 456 18
+_divide 	3 857  6 456 18
+pow		3 860  6 456 18
+_color		4 863  6 456 18
+_scale		3 867  6 457 18
+_scale		3 870  6 457 18
+_eq		3 873  6 461 3
+_if		5 876  6 461 3
+comp		3 881  6 463 19
+_gt		3 884  6 463 19
+_if		5 887  6 463 19
+_scale		3 892  6 464 20
+_scale		3 895  6 468 21
+_enterproc 	1 898  6 255 2

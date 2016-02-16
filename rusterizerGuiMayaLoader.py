@@ -1,0 +1,1 @@
+from rusterizerGui import *;win=rusterizerClass();win.create()
